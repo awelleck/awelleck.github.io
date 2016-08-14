@@ -24,11 +24,11 @@ body {
   font-family: Helvetica;
 }
 
-.links.li {
+.links li {
   display: inline;
 }
 
-.links.ul {
+.links ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
