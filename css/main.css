@@ -24,12 +24,18 @@ body {
   font-family: Helvetica;
 }
 
+.links ul {
+  list-style-type: none;
+  /* margin: 0;
+  padding: 0; */
+}
+
 .links li {
   display: inline;
 }
 
-.links ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.links a {
+  padding: 16px;
+  text-decoration: none;
+  color: #B38B6D; /* Light taupe */
 }
