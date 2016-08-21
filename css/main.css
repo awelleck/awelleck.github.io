@@ -39,3 +39,12 @@ body {
   text-decoration: none;
   color: #B38B6D; /* Light taupe */
 }
+
+#project {
+  display: none;
+  /* visibility: hidden; */
+}
+
+.project_links {
+  list-style-type: none;
+}
