@@ -17,7 +17,7 @@ body {
 .image {
   border-radius: 50%;
   height: 20em;
-  border: 1.75em solid #CFCFCF;
+  border: 1.75em solid #CFCFCF; /* Light grey */
 }
 
 .heading {
@@ -32,12 +32,17 @@ body {
 
 .links li {
   display: inline;
+  padding: 16px;
 }
 
-.links a {
-  padding: 16px;
+.links li a {
   text-decoration: none;
   color: #B38B6D; /* Light taupe */
+}
+
+.links li a:hover {
+  text-decoration: none;
+  color: #6D95B3; /* Blue grey */
 }
 
 #project {
