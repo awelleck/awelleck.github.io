@@ -53,3 +53,8 @@ body {
 .project_links {
   list-style-type: none;
 }
+
+.btn-primary {
+  background-color: #B38B6D !important; /*Override Bootstrap button color with light taupe */
+  border-color: #000000 !important; /*Override Bootstrap button border color with black */
+}

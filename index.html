@@ -1,46 +1,38 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
 <title>Andrew's Website</title>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 <link href="css/main.css" type="text/css" rel="stylesheet">
 <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
 <link href="font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet">
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <script src="projects.js"></script>
 <script src="dice.js"></script>
 </head>
 
 <body>
-    <div class="navbar navbar-inverse navbar-static-top">
-        <a class="navbar-brand">Andrew Welleck</a>
-        <div onmousemove="myMoveFunction()" onmouseout="myOutFunction()">
-            <div id="project">
-                <ul class="project_links">
-                    <li>
-                        <a href="https://openstack.org/">
-                            <span>OpenStack</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://dwanswers.com/">
-                            <span>dwAnswers</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://awelleck.com/">
-                            <span>shopping cart</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <a class="navbar-brand pull-right">Projects</a>
-            <div id="dark" class="color_invert"></div>
-        </div>
-    </div>
+  <div class="navbar navbar-inverse"> <!-- navbar-static-top -->
+    <a href="index.html" class="navbar-brand">Andrew Welleck</a>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://openstack.org/">OpenStack</a></li>
+            <li><a href="https://developer.ibm.com/answers/users/250818/andrew-welleck.html">dwAnswers</a></li>
+            <li><a href="index.html">Shopping Cart</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>      
+  </div>
 
     <div class="container">
 	    <div class="row">
 	        <div class="centered">
-                <img class="image" src="self.jpg" id="gravatar">
+                <img class="image" src=self.jpg id="gravatar">
 
                 <div class="heading">
                     <h1>Problem Solver | Traveler | Thinker</h1>
@@ -59,7 +51,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="email@email.com">
+                            <a href="#">
                                 <i class="fa fa-envelope fa-2x"></i>
                             </a>
                         </li>
@@ -67,13 +59,13 @@
                 </div>
 
                 <div>
-                    <button onclick="diceRoller()">Roll</button>
+                    <button type="button" class="btn btn-primary" onclick="diceRoller()">Roll</button>
                     <p id="rollButton"></p>
                 </div>
 
             </div>
-        </div>
-    </div>
+        </div> <!-- row div -->
+    </div> <!-- container div -->
 </body>
 
 </html>
