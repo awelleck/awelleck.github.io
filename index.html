@@ -3,18 +3,24 @@
 
 <head>
 <title>Andrew's Website</title>
+<!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-<link href="css/main.css" type="text/css" rel="stylesheet">
-<link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+
+<!-- Font Awesome -->
 <link href="font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Bootstrap -->
+<link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
 <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-<script src="projects.js"></script>
+
+<!-- custom -->
+<link href="css/main.css" type="text/css" rel="stylesheet">
 <script src="dice.js"></script>
 </head>
 
 <body>
   <div class="navbar navbar-inverse"> <!-- navbar-static-top -->
-    <a href="index.html" class="navbar-brand">Andrew Welleck</a>
+    <a href="#" class="navbar-brand">Andrew Welleck</a>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
@@ -29,43 +35,43 @@
     </div>      
   </div>
 
-    <div class="container">
-	    <div class="row">
-	        <div class="centered">
-                <img class="image" src=self.jpg id="gravatar">
+  <div class="container">
+    <div class="row">
+      <div class="centered">
+        <img class="image" src=self.jpg id="gravatar">
 
-                <div class="heading">
-                    <h1>Problem Solver | Traveler | Thinker</h1>
-                </div>
+        <div class="heading">
+          <h1>Problem Solver | Traveler | Thinker</h1>
+        </div>
 
-                <div>
-                    <ul class="links">
-                        <li>
-                            <a href="https://github.com/awelleck">
-                                <i class="fa fa-github-square fa-2x"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://linkedin.com/">
-                                <i class="fa fa-linkedin fa-2x"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-envelope fa-2x"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+        <div>
+          <ul class="links">
+            <li>
+              <a href="https://github.com/awelleck">
+                <i class="fa fa-github-square fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/">
+                <i class="fa fa-linkedin fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-envelope fa-2x"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-                <div>
-                    <button type="button" class="btn btn-primary" onclick="diceRoller()">Roll</button>
-                    <p id="rollButton"></p>
-                </div>
+        <div>
+          <button type="button" class="btn btn-primary" onclick="diceRoller()">Roll</button>
+          <p id="rollButton"></p>
+        </div>
 
-            </div>
-        </div> <!-- row div -->
-    </div> <!-- container div -->
+      </div>
+    </div> <!-- row div -->
+  </div> <!-- container div -->
 </body>
 
 </html>
