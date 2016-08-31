@@ -32,7 +32,7 @@ body {
 
 .links li {
   display: inline;
-  padding: 16px;
+  padding: 1em;
 }
 
 .links li a {
@@ -54,7 +54,21 @@ body {
   list-style-type: none;
 }
 
-.btn-primary {
+.btn-primary { /* Roll button */
   background-color: #B38B6D !important; /*Override Bootstrap button color with light taupe */
   border-color: #000000 !important; /*Override Bootstrap button border color with black */
+}
+
+.badge { /*Copyright and name */
+  position: absolute;
+  bottom: .5em;
+  right: 1em;
+}
+
+.name-bar {
+  margin-left: 5em;
+}
+
+.projects-bar {
+  margin-right: 5em;
 }
