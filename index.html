@@ -3,6 +3,8 @@
 
 <head>
 <title>Andrew's Website</title>
+<link rel='shortcut icon' href='img/favicon-home.ico' type='image/x-icon'/>
+
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 
@@ -13,14 +15,17 @@
 <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
 <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 
+<!-- Google Fonts: Montserrat -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
 <!-- custom -->
 <link href="css/main.css" type="text/css" rel="stylesheet">
 <script src="dice.js"></script>
 </head>
 
-<body>
+<body onload ="diceRoller()">
   <div class="navbar navbar-inverse"> <!-- navbar-static-top -->
-    <a href="#" class="navbar-brand name-bar">Andrew Welleck</a>
+    <a href="index.html" class="navbar-brand name-bar">Andrew Welleck</a>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
@@ -38,7 +43,7 @@
   <div class="container">
     <div class="row">
       <div class="centered">
-        <img class="image" src=self.jpg id="gravatar">
+        <img class="image" src=img/houndstooth.jpg id="gravatar">
 
         <div class="heading">
           <h1>Builder. Thinker. Explorer.</h1>
@@ -58,14 +63,21 @@
             </li>
             <li>
               <a href="#">
+                <i class="fa fa-stack-overflow fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
                 <i class="fa fa-envelope fa-2x"></i>
               </a>
             </li>
           </ul>
         </div>
 
+<hr>
+
         <div>
-          <button type="button" class="btn btn-primary" onclick="diceRoller()">Roll</button>
+          <button type="button" class="btn btn-primary roll_button" onclick="diceRoller()">Feeling Lucky?</button>
           <p id="rollButton"></p>
         </div>
 

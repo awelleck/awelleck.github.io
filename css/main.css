@@ -4,10 +4,12 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
   margin: 0px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .centered {
@@ -24,10 +26,15 @@ body {
   font-family: Helvetica;
 }
 
+.links {
+  margin: 0;
+  padding: 0;
+}
+
 .links ul {
   list-style-type: none;
-  /* margin: 0;
-  padding: 0; */
+  margin: 0;
+  padding: 0;
 }
 
 .links li {
@@ -54,9 +61,11 @@ body {
   list-style-type: none;
 }
 
-.btn-primary { /* Roll button */
+.roll_button { /* Roll button */
   background-color: #B38B6D !important; /*Override Bootstrap button color with light taupe */
   border-color: #000000 !important; /*Override Bootstrap button border color with black */
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
 
 .badge { /*Copyright and name */
@@ -71,4 +80,15 @@ body {
 
 .projects-bar {
   margin-right: 5em;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
