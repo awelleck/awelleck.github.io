@@ -19,7 +19,7 @@ body {
 .image {
   border-radius: 50%;
   height: 20em;
-  border: 1.75em solid #CFCFCF; /* Light grey */
+  border: 1.75em solid #cfcfcf; /* Light grey */
 }
 
 .heading {
@@ -44,12 +44,12 @@ body {
 
 .links li a {
   text-decoration: none;
-  color: #B38B6D; /* Light taupe */
+  color: #029bd9; /* Vivid blue */
 }
 
 .links li a:hover {
   text-decoration: none;
-  color: #6D95B3; /* Blue grey */
+  color: #8e2a01; /* Dark orange */
 }
 
 #project {
@@ -62,8 +62,8 @@ body {
 }
 
 .roll_button { /* Roll button */
-  background-color: #B38B6D !important; /*Override Bootstrap button color with light taupe */
-  border-color: #000000 !important; /*Override Bootstrap button border color with black */
+  background-color: #029bd9 !important; /*Override Bootstrap button color with vivid blue */
+  border-color: #d3d3d3 !important; /*Override Bootstrap button border color with light grey */
   margin-bottom: 1em;
   margin-top: 1em;
 }
@@ -91,4 +91,27 @@ hr {
     height: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navbar-inverse {
+    background-color: #029bd9; /* Vivid blue */
+    border-color: #d3d3d3; /* Light grey */
+}
+
+.navbar-inverse .navbar-brand {
+  color: #ffffff; /* White */
+}
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: #cfcfcf; /* Light grey */
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #ffffff; /* White */
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #cfcfcf; /* Light grey */
 }
