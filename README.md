@@ -1,4 +1,4 @@
-# new_personal-site
+# personal-site
 Basic start on personal website. Used Bootstrap framework for general look/feel of site. Dice edited using Inkscape.
 
 ## TODO
