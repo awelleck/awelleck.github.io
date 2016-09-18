@@ -40,21 +40,23 @@ ga('send', 'pageview');
 
 <body onload ="diceRoller()">
   <div class="navbar navbar-inverse">
-    <div class="container">
-      <a href="index.html" class="navbar-brand">Andrew Welleck</a>
-  
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-  
+    <div class="container-fluid">
+      <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span> 
+        </button>
+
+        <a href="index.html" class="navbar-brand">Andrew Welleck</a>
+      </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle navbar-brand" data-toggle="dropdown" role="button" aria-haspopup="true" 
+            <a href="#" class="dropdown-toggle navbar-brand projects-bar" data-toggle="dropdown" role="button" aria-haspopup="true" 
             aria-expanded="false">Projects <span class="caret"></span></a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu projects-menu">
               <li><a href="https://review.openstack.org/#/q/owner:%22Andrew+Welleck+%253Cawellec%2540us.ibm.com%253E%22">OpenStack</a></li>
               <li><a href="https://developer.ibm.com/answers/users/250818/andrew-welleck.html">dwAnswers</a></li>
               <li><a href="index.html">Shopping Cart</a></li>
@@ -62,7 +64,7 @@ ga('send', 'pageview');
           </li>
         </ul>
       </div> <!-- navbar-collapse div -->
-    </div> <!-- container div -->
+    </div> <!-- container-fluid div -->
   </div> <!-- navbar-inverse div -->
 
   <div class="container">
@@ -82,9 +84,7 @@ ga('send', 'pageview');
             <li><a href="#"><i class="fa fa-envelope fa-2x"></i></a></li>
           </ul>
         </div>
-
         <hr>
-
         <div>
           <button type="button" class="btn btn-primary roll_button" onclick="diceRoller()">Feeling Lucky?</button>
           <p id="rollButton"></p>
@@ -93,7 +93,10 @@ ga('send', 'pageview');
       </div>
     </div> <!-- row div -->
   </div> <!-- container div -->
-  <p class="badge">&copy; 2016 Andrew Welleck</p>
+
+  <div>
+    <p class="badge">&copy; 2016 Andrew Welleck</p>
+  </div>
 </body>
 
 </html>
