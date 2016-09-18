@@ -54,7 +54,6 @@ body {
 
 #project {
   display: none;
-  /* visibility: hidden; */
 }
 
 .project_links {
@@ -72,18 +71,6 @@ body {
   position: absolute;
   bottom: .5em;
   right: 1em;
-}
-
-.name-bar {
-  margin-left: 5em;
-}
-
-.projects-bar {
-  margin-right: 5em;
-}
-
-.projects-menu {
-  margin-right: 3.5em;
 }
 
 h1 {

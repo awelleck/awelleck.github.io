@@ -3,9 +3,10 @@
 
 <head>
 <title>Andrew's Website</title>
-<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
-
 <link rel='shortcut icon' href='img/favicon-home.ico' type='image/x-icon'/>
+
+<!-- Mobile -->
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
 
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
@@ -20,15 +21,27 @@
 <!-- Google Fonts: Montserrat -->
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-XXXXX-Y', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
 <!-- custom -->
 <link href="css/main.css" type="text/css" rel="stylesheet">
 <script src="dice.js"></script>
 </head>
 
 <body onload ="diceRoller()">
-  <div class="navbar navbar-inverse"> <!-- navbar-static-top -->
+  <div class="navbar navbar-inverse">
     <div class="container">
-      <a href="index.html" class="navbar-brand name-bar">Andrew Welleck</a>
+      <a href="index.html" class="navbar-brand">Andrew Welleck</a>
   
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
@@ -39,17 +52,18 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle navbar-brand" data-toggle="dropdown" role="button" aria-haspopup="true"   aria-expanded="false">Projects <span class="caret"></span></a>
-            <ul class="dropdown-menu projects-menu">
+            <a href="#" class="dropdown-toggle navbar-brand" data-toggle="dropdown" role="button" aria-haspopup="true" 
+            aria-expanded="false">Projects <span class="caret"></span></a>
+            <ul class="dropdown-menu">
               <li><a href="https://review.openstack.org/#/q/owner:%22Andrew+Welleck+%253Cawellec%2540us.ibm.com%253E%22">OpenStack</a></li>
               <li><a href="https://developer.ibm.com/answers/users/250818/andrew-welleck.html">dwAnswers</a></li>
               <li><a href="index.html">Shopping Cart</a></li>
             </ul>
           </li>
         </ul>
-      </div>
-    </div>
-  </div>
+      </div> <!-- navbar-collapse div -->
+    </div> <!-- container div -->
+  </div> <!-- navbar-inverse div -->
 
   <div class="container">
     <div class="row">
@@ -62,30 +76,14 @@
 
         <div>
           <ul class="links">
-            <li>
-              <a href="https://github.com/awelleck">
-                <i class="fa fa-github-square fa-2x"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://linkedin.com/">
-                <i class="fa fa-linkedin fa-2x"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-stack-overflow fa-2x"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-envelope fa-2x"></i>
-              </a>
-            </li>
+            <li><a href="https://github.com/awelleck"><i class="fa fa-github-square fa-2x"></i></a></li>
+            <li><a href="https://linkedin.com/"><i class="fa fa-linkedin fa-2x"></i></a></li>
+            <li><a href="#"><i class="fa fa-stack-overflow fa-2x"></i></a></li>
+            <li><a href="#"><i class="fa fa-envelope fa-2x"></i></a></li>
           </ul>
         </div>
 
-<hr>
+        <hr>
 
         <div>
           <button type="button" class="btn btn-primary roll_button" onclick="diceRoller()">Feeling Lucky?</button>
